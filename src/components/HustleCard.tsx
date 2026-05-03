@@ -1,5 +1,7 @@
+'use client';
+
 import styles from './HustleCard.module.css';
-import { TrendingUp, ShieldCheck, Star, ArrowUpRight } from 'lucide-react';
+import { TrendingUp, ShieldCheck, Star, ArrowUpRight, Lock } from 'lucide-react';
 
 interface Hustle {
   id: string;
@@ -13,8 +15,15 @@ interface Hustle {
 }
 
 export default function HustleCard({ hustle }: { hustle: Hustle }) {
-  // ダミーの成長グラフデータ
   const sparkData = [20, 40, 35, 60, 55, 80, 95];
+
+  const handleDetailClick = () => {
+    // 登録セクションへスムーズにスクロール
+    const registerSection = document.getElementById('register');
+    if (registerSection) {
+      registerSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <div className={`${styles.card} ${hustle.isPremium ? styles.premium : ''}`}>
@@ -28,7 +37,7 @@ export default function HustleCard({ hustle }: { hustle: Hustle }) {
         </div>
         {hustle.isPremium && (
           <div className={styles.premiumBadge}>
-            < Star size={10} fill="currentColor" />
+            <Star size={10} fill="currentColor" />
             FEATURED
           </div>
         )}
@@ -53,7 +62,6 @@ export default function HustleCard({ hustle }: { hustle: Hustle }) {
             <TrendingUp size={14} className={styles.trendIcon} />
             <span className={styles.metricValue}>{hustle.profit}</span>
           </div>
-          {/* ミニグラフ */}
           <div className={styles.sparkline}>
             {sparkData.map((val, i) => (
               <div 
@@ -72,7 +80,8 @@ export default function HustleCard({ hustle }: { hustle: Hustle }) {
             <span key={tag} className={styles.tag}>#{tag}</span>
           ))}
         </div>
-        <button className={styles.actionBtn}>
+        <button className={styles.actionBtn} onClick={handleDetailClick}>
+          <Lock size={14} style={{ marginRight: '4px' }} />
           詳細を見る
         </button>
       </div>
