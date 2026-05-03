@@ -6,7 +6,11 @@
     "description": "Midjourneyを活用して、特定のニッチな業界（例：医療、建設）に特化したストックフォトサイトを構築・運営。",
     "difficulty": "初級",
     "profit": "月5-20万円",
-    "tags": ["Midjourney", "Stripe", "Niche"],
+    "tags": [
+      "Midjourney",
+      "Stripe",
+      "Niche"
+    ],
     "isPremium": true
   },
   {
@@ -16,7 +20,53 @@
     "description": "特定の業界ニュースをAIが毎日巡回・要約し、Substack経由で有料配信する仕組み。",
     "difficulty": "中級",
     "profit": "月10-50万円",
-    "tags": ["Gemini API", "Make", "Substack"],
+    "tags": [
+      "Gemini API",
+      "Make",
+      "Substack"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "17777936788740",
+    "title": "AI生成モデルを活用した特化型SNS運用代行",
+    "category": "画像生成",
+    "description": "Midjourney等の画像生成AIを用いて、実写系モデルや架空のキャラクターによるSNSアカウントを運用。ファンを獲得し、画像素材の販売やアフィリエイト、企業案件の受注を通じて収益化を図ります。",
+    "difficulty": "初級",
+    "profit": "月5-15万円",
+    "tags": [
+      "Midjourney",
+      "Instagram",
+      "マネタイズ"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "17777936788741",
+    "title": "AI×ノーコードによる業務自動化支援サービス",
+    "category": "自動化",
+    "description": "ChatGPTとMakeやZapierを組み合わせ、顧客対応の自動化や議事録作成、データ整理のワークフローを構築・導入支援。専門知識がない中小企業や個人事業主向けに、業務効率化の仕組みを販売します。",
+    "difficulty": "中級",
+    "profit": "月10-30万円",
+    "tags": [
+      "Make",
+      "ChatGPT",
+      "業務効率化"
+    ],
+    "isPremium": false
+  },
+  {
+    "id": "17777936788742",
+    "title": "最新AIエージェントを用いた専門記事制作代行",
+    "category": "ライティング",
+    "description": "Claude 3.5やPerplexity等の最新AIを駆使し、リサーチ精度の高いニッチな専門分野のSEO記事やニュースレターを制作。AIによる構成案作成と推敲を組み合わせ、高品質かつ大量の納品を実現します。",
+    "difficulty": "中級",
+    "profit": "月5-20万円",
+    "tags": [
+      "Claude",
+      "SEO",
+      "コンテンツ制作"
+    ],
     "isPremium": false
   }
 ]
