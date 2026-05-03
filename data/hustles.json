@@ -1,16 +1,12 @@
 [
   {
-    "id": "1",
-    "title": "AI画像素材マーケットプレイス",
-    "category": "画像生成",
-    "description": "Midjourneyを活用して、特定のニッチな業界（例：医療、建設）に特化したストックフォトサイトを構築・運営。",
-    "difficulty": "初級",
-    "profit": "月5-20万円",
-    "tags": [
-      "Midjourney",
-      "Stripe",
-      "Niche"
-    ],
+    "id": "invoice-gold-001",
+    "title": "The Invoice Gold | 請求書AI自動チェッカー",
+    "category": "自動化",
+    "description": "レシートや請求書のPDFを放り込むだけで、AIが仕分け・集計・CSV化を数秒で完結。2時間の作業を1分に短縮する魔法のツールです。",
+    "difficulty": "初級（置くだけ）",
+    "profit": "月10-30万円",
+    "tags": ["Gemini API", "Python", "経理効率化"],
     "isPremium": true
   },
   {
