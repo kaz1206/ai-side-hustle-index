@@ -1,0 +1,339 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  background: var(--gold);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nav a {
+  font-size: 0.9rem;
+  color: var(--muted);
+  transition: color 0.2s;
+}
+
+.ctaSmall {
+  border: 1px solid var(--gold-text);
+  color: var(--gold-text) !important;
+  padding: 0.4rem 1.2rem;
+  border-radius: 99px;
+  font-weight: 700;
+}
+
+.hero {
+  text-align: center;
+  padding: 10rem 0 6rem;
+}
+
+.badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 800;
+  background: rgba(251, 191, 36, 0.1);
+  color: var(--gold-text);
+  padding: 0.6rem 1.2rem;
+  border-radius: 99px;
+  margin-bottom: 2.5rem;
+  border: 1px solid rgba(251, 191, 36, 0.2);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+.title {
+  font-size: 4.5rem;
+  font-weight: 900;
+  line-height: 1.1;
+  margin-bottom: 2rem;
+  letter-spacing: -0.04em;
+}
+
+.highlightGold {
+  background: var(--gold);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 20px rgba(251, 191, 36, 0.3));
+}
+
+.subtitle {
+  font-size: 1.35rem;
+  color: var(--muted);
+  max-width: 700px;
+  margin: 0 auto 3.5rem;
+}
+
+.heroActions {
+  margin-bottom: 5rem;
+}
+
+.heroNote {
+  font-size: 0.85rem;
+  color: #ef4444;
+  margin-top: 1.5rem;
+  font-weight: 700;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 3rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.statLabel {
+  font-size: 0.8rem;
+  color: var(--muted);
+  text-transform: uppercase;
+}
+
+.statValue {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+.statDivider {
+  width: 1px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.growthGraph {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: linear-gradient(to top, rgba(251, 191, 36, 0.05), transparent);
+}
+
+.growthLine {
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px solid rgba(251, 191, 36, 0.2);
+  transform: skewY(-2deg);
+}
+
+/* ベネフィット */
+.benefits {
+  padding: 8rem 0;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.benefitGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+.benefitCard {
+  background: rgba(255, 255, 255, 0.02);
+  padding: 3rem 2rem;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  text-align: center;
+}
+
+.benefitIcon {
+  color: var(--gold-text);
+  margin-bottom: 1.5rem;
+}
+
+.benefitCard h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.benefitCard p {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+/* ディレクトリセクション */
+.directorySection {
+  padding: 4rem 0 8rem;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.sectionHeader p {
+  color: var(--muted);
+}
+
+/* ユーザーの声セクション */
+.testimonials {
+  padding: 8rem 0;
+  background: radial-gradient(circle at 50% 50%, rgba(99, 102, 241, 0.05), transparent 70%);
+}
+
+.testimonialGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 4rem;
+}
+
+.testimonialCard {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 2.5rem;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  transition: transform 0.3s;
+}
+
+.testimonialCard:hover {
+  transform: translateY(-10px);
+  border-color: rgba(251, 191, 36, 0.3);
+}
+
+.userQuote {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #f8fafc;
+  line-height: 1.5;
+}
+
+.userProfile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: auto;
+}
+
+.userAvatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 99px;
+  background: var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  color: #000;
+}
+
+.userInfo h4 {
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+.userInfo p {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.profitBadge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: var(--gold-text);
+  border: 1px solid var(--gold-text);
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+}
+
+/* 登録セクション */
+.registerSection {
+  padding: 4rem 0 10rem;
+}
+
+.registerCard {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(168, 85, 247, 0.1));
+  padding: 5rem 3rem;
+  border-radius: 40px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.registerCard h2 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  font-weight: 900;
+}
+
+.registerCard p {
+  font-size: 1.2rem;
+  color: var(--muted);
+  margin-bottom: 3rem;
+}
+
+.registerForm {
+  display: flex;
+  gap: 1rem;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.input {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1rem 1.5rem;
+  border-radius: 99px;
+  color: #ffffff;
+  font-size: 1rem;
+  outline: none;
+}
+
+.input:focus {
+  border-color: var(--gold-text);
+}
+
+.trustInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.footer {
+  text-align: center;
+  padding: 4rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  color: #475569;
+  font-size: 0.9rem;
+}

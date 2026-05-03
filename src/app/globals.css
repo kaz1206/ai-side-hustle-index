@@ -1,0 +1,88 @@
+:root {
+  --background: #020617;
+  --foreground: #f8fafc;
+  --accent: #6366f1;
+  --gold: linear-gradient(135deg, #fde68a 0%, #fbbf24 50%, #d97706 100%);
+  --gold-text: #fbbf24;
+  --muted: #94a3b8;
+  --card-bg: rgba(255, 255, 255, 0.03);
+  --card-border: rgba(255, 255, 255, 0.08);
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* ゴールドボタンの定義 */
+.btn-gold {
+  background: var(--gold);
+  color: #000;
+  padding: 1rem 2.5rem;
+  border-radius: 99px;
+  font-weight: 800;
+  font-size: 1.1rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  box-shadow: 0 10px 20px rgba(217, 119, 6, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  display: inline-block;
+}
+
+.btn-gold:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 20px 40px rgba(217, 119, 6, 0.5);
+}
+
+/* 背景 Aura */
+.bg-wrapper {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-color: var(--background);
+}
+
+.bg-aura-1 {
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  width: 70%;
+  height: 70%;
+  background: radial-gradient(circle, rgba(251, 191, 36, 0.08), transparent 70%);
+  filter: blur(100px);
+}
+
+.bg-aura-2 {
+  position: absolute;
+  bottom: -10%;
+  right: -10%;
+  width: 70%;
+  height: 70%;
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.1), transparent 70%);
+  filter: blur(100px);
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 1;
+}

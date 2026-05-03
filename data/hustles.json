@@ -1,0 +1,22 @@
+[
+  {
+    "id": "1",
+    "title": "AI画像素材マーケットプレイス",
+    "category": "画像生成",
+    "description": "Midjourneyを活用して、特定のニッチな業界（例：医療、建設）に特化したストックフォトサイトを構築・運営。",
+    "difficulty": "初級",
+    "profit": "月5-20万円",
+    "tags": ["Midjourney", "Stripe", "Niche"],
+    "isPremium": true
+  },
+  {
+    "id": "2",
+    "title": "自動要約ニュースレター",
+    "category": "自動化",
+    "description": "特定の業界ニュースをAIが毎日巡回・要約し、Substack経由で有料配信する仕組み。",
+    "difficulty": "中級",
+    "profit": "月10-50万円",
+    "tags": ["Gemini API", "Make", "Substack"],
+    "isPremium": false
+  }
+]

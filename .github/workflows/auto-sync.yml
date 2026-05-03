@@ -1,0 +1,40 @@
+name: AI Auto Sync
+
+on:
+  schedule:
+    - cron: '0 18 * * *' # 日本時間 毎日深夜3時 (UTC 18:00)
+  workflow_dispatch: # 手動実行も可能にする
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: ai-side-hustle-kit/package-lock.json
+
+      - name: Install Dependencies
+        run: |
+          cd ai-side-hustle-kit
+          npm install
+
+      - name: Sync AI Hustles
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          cd ai-side-hustle-kit
+          npm run sync
+
+      - name: Commit and Push changes
+        run: |
+          git config --global user.name "AI Auto Sync"
+          git config --global user.email "action@github.com"
+          git add ai-side-hustle-kit/data/hustles.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-sync new hustles" && git push)
