@@ -15,7 +15,7 @@ async function diagnose() {
   try {
     // 1. シンプルな疎通確認
     console.log("📡 Googleサーバーへ接続試行中...");
-    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+    const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
     const result = await model.generateContent("Hello");
     console.log("✅ 接続成功！レスポンス:", result.response.text());
   } catch (error) {

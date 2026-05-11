@@ -20,7 +20,7 @@ async function syncHustles() {
   console.log("🚀 あなたの特別なAPIキーに最適化中...");
 
   // リストで確認できた、最も確実な最新エイリアスを試します
-  const candidates = ["gemini-2.0-flash-001", "gemini-flash-latest", "gemini-pro-latest"];
+  const candidates = ["gemini-2.0-flash", "gemini-1.5-flash", "gemini-1.5-pro"];
   let activeModel = null;
 
   for (const name of candidates) {
